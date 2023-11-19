@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
         User::create([
             'first_name' => 'John',
             'last_name' => 'Doe',
-            'email' => 'john.doe@gmail.com',
-            'password' => Hash::make('1111'),
+            'email' => 'polodev10@gmail.com',
+            'password' => Hash::make('secret2'),
         ]);
 
         $categoryList = json_decode(file_get_contents(public_path('./categories.json')), true);
